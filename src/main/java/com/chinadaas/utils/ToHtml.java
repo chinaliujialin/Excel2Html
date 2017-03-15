@@ -20,8 +20,8 @@ import java.util.*;
 import static org.apache.poi.ss.usermodel.CellStyle.*;
 
 public class ToHtml {
-    private final Workbook wb;
-    private final Appendable output;
+    private  Workbook wb;
+    private  Appendable output;
     private boolean completeHTML;
     private Formatter out;
     private boolean gotBounds;
@@ -85,7 +85,7 @@ public class ToHtml {
      */
     public static ToHtml create(String path, Appendable output)
             throws IOException {
-        return create(new FileInputStream(path), output);
+            return create(new FileInputStream(path), output);
     }
 
     /**
@@ -106,6 +106,10 @@ public class ToHtml {
         } catch (InvalidFormatException e){
             throw new IllegalArgumentException("Cannot create workbook from stream", e);
         }
+    }
+
+    public ToHtml(){
+
     }
 
     private ToHtml(Workbook wb, Appendable output) {
@@ -159,15 +163,14 @@ public class ToHtml {
     /**
      * Run this class as a program
      *
-     * @param args The command line arguments.
-     *
+     * @param input
+     * @param output
      * @throws Exception Exception we don't recover from.
      */
-    public static void main(String[] args) throws Exception {
+    public void excelToHtml(String input,String output) throws Exception {
        
-    	String inputPath="E:\\workspace\\Excel2HTML\\data\\test.xlsx";
-    	String outputPath="E:\\workspace\\Excel2HTML\\data\\test.html";
-
+    	String inputPath=input;
+    	String outputPath=output;
         ToHtml toHtml = create(inputPath, new PrintWriter(new FileWriter(outputPath)));
         toHtml.setCompleteHTML(true);
         toHtml.printPage();
@@ -403,16 +406,18 @@ public class ToHtml {
     }
 
     private void printSheetContent(Sheet sheet) {
-       // printColumnHeads();
+         //printColumnHeads();
 
         out.format("<tbody>%n");
         Iterator<Row> rows = sheet.rowIterator();
         while (rows.hasNext()) {
             Row row = rows.next();
 
-            out.format("  <tr>%n");
-            out.format("    <td class=%s>%d</td>%n", ROW_HEAD_CLASS,
-                    row.getRowNum() + 1);
+            if(row.getRowNum()!=0){
+                out.format("  <tr>%n");
+                out.format("    <td class=%s>%d</td>%n", ROW_HEAD_CLASS,
+                        row.getRowNum() );
+            }
             for (int i = firstColumn; i < endColumn; i++) {
                 String content = "&nbsp;";
                 String attrs = "";
