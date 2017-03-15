@@ -1,3 +1,4 @@
+package com.chinadaas.utils;
 /*
 * This is the updated version of ToHtml.java by Sushant Kafle
 * Modifications include: multiple Sheets display with tab
@@ -7,28 +8,16 @@
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFFont;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.format.CellFormat;
 import org.apache.poi.ss.format.CellFormatResult;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-import java.io.BufferedReader;
-import java.io.Closeable;
-import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.util.Formatter;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 
 import static org.apache.poi.ss.usermodel.CellStyle.*;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 public class ToHtml {
     private final Workbook wb;
@@ -176,8 +165,8 @@ public class ToHtml {
      */
     public static void main(String[] args) throws Exception {
        
-    	String inputPath="d:\\myRep.xlsx";
-    	String outputPath="d:\\index.html";
+    	String inputPath="E:\\workspace\\Excel2HTML\\data\\test.xlsx";
+    	String outputPath="E:\\workspace\\Excel2HTML\\data\\test.html";
 
         ToHtml toHtml = create(inputPath, new PrintWriter(new FileWriter(outputPath)));
         toHtml.setCompleteHTML(true);
@@ -196,6 +185,7 @@ public class ToHtml {
                 out.format("<?xml version=\"1.0\" encoding=\"iso-8859-1\" ?>%n");
                 out.format("<html>%n");
                 out.format("<head>%n");
+                out.format("<meta http-equiv=Content-Type content=\"text/html;charset=utf-8\">%n");
                 out.format("<link href=\"excelStyle.css\" rel=\"stylesheet\" type=\"text/css\">%n");
                 out.format("<link rel=\"stylesheet\" href=\"http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css\">%n");
                 out.format("<script src=\"http://code.jquery.com/jquery-1.9.1.js\"></script>%n");
