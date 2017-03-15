@@ -403,7 +403,7 @@ public class ToHtml {
     }
 
     private void printSheetContent(Sheet sheet) {
-        printColumnHeads();
+       // printColumnHeads();
 
         out.format("<tbody>%n");
         Iterator<Row> rows = sheet.rowIterator();
@@ -430,6 +430,8 @@ public class ToHtml {
                         content = result.text;
                         if (content.equals(""))
                             content = "&nbsp;";
+                        if(content.equals("返回"))
+                            content ="";
                     }
                 }
                 out.format("    <td class=%s %s>%s</td>%n", styleName(style),
