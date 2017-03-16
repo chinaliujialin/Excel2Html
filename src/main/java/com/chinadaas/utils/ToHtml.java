@@ -215,8 +215,7 @@ public class ToHtml {
                         "}\n" +
                         "</script>\n" +
                         "<div class='banner2'>\n" +
-                        "<img src='images/plus.gif' height='15' width='15' border='0' alt='' />\n" +
-                        "<a onclick=ClickMenu('main22')>目录索引栏开关</a>\n" +
+                        "<button type=\"button\"onclick=ClickMenu('main22')>目录索引栏开关</button>\n" +
                         "</div>");
             }
             

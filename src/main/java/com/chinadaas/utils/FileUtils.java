@@ -1,7 +1,7 @@
 package com.chinadaas.utils;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.util.Scanner;
 
 /**
  * Created by pc on 2017/3/16.
@@ -20,6 +20,66 @@ public class FileUtils {
         this.inPath=new File(inDirPath);
         this.outPath= new File(outDirPath);
         testInputPath();
+    }
+
+    public FileUtils(){
+
+    }
+
+    public void singleFileCheck()throws Exception{
+        String type;
+        Scanner input= new Scanner(System.in);
+        type=input.nextLine();
+        System.out.println("单文本转换："+type);
+        System.out.println("请输入要转换的文件地址：");
+        String dirPath =input.nextLine();
+        File file = new File(dirPath);
+        if(file.exists()){
+            if(file.isDirectory()){
+                System.out.println("输入文件为目录，请输入正确的Excel文件");
+            } else{
+                String outputPathName ="";
+                if(file.getName().endsWith(".xlsx")){
+                    ToHtml toHtml = new ToHtml();
+                    outputPathName ="F:\\" + file.getName().substring(0,file.getName().indexOf(".xlsx")) + ".html" ;
+                    toHtml.excelToHtml(dirPath,outputPathName);
+                    System.out.println("转化后的输出路径为："+outputPathName);
+                }else if(file.getName().endsWith(".xls")){
+                    ToHtml toHtml = new ToHtml();
+                    outputPathName ="F:\\" + file.getName().substring(0,file.getName().indexOf(".xls")) + ".html";
+                    toHtml.excelToHtml(dirPath,outputPathName);
+                    System.out.println("转化后的输出路径为："+outputPathName);
+                }
+                else{
+                    System.out.println("输入的不是正确的Excel格式文件");
+                }
+            }
+        }else{
+            System.out.println("请输入正确的文件名，按任意键继续");
+        }
+    }
+
+    public void directoryFileCheck(){
+        String type;
+        Scanner input= new Scanner(System.in);
+        type=input.nextLine();
+        System.out.println("你输入的是目录转换："+type);
+        System.out.println("请输入文件目录地址：");
+        String dirInPath =input.nextLine();
+        System.out.println("请输入文件输出目录地址：（如直接输入名称则在软件根目录下建立文件夹）");
+        String dirOutPath =input.nextLine();
+        FileUtils pathChenger = new FileUtils(dirInPath,dirOutPath);
+    }
+
+    public void errorMessage(){
+        {
+            System.out.println("你输入的不是有效内容");
+            System.out.println("请输入要进行的操作编号（1、2、3）：\n1、单个文件转换\n2、文件夹转换\n3、结束");
+        }
+    }
+
+    public void finishCheck(){
+        System.out.println("结束");
     }
 
     private void testInputPath(){
