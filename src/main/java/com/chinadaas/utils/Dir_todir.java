@@ -69,39 +69,31 @@ public class Dir_todir {
     public void getFileList(String originPath,String cutOriginPath,String aimPath)throws Exception {
         File originPathFile = new File(originPath);
         File cutOriginPathFile = new File(cutOriginPath);
-        File[] files = originPathFile.listFiles();     // 该文件目录下文件全部放入数组
+        File[] files = originPathFile.listFiles();
         if (files != null) {
             for (int i = 0; i < files.length; i++) {
                 String fileName = files[i].getName();
-                if (files[i].isDirectory()) {      // 判断是文件还是文件夹,如果是文件夹获取在子目录中的文件夹名称
+                if (files[i].isDirectory()) {
                     String filename = files[i].getAbsolutePath().replace(cutOriginPathFile.getAbsolutePath(),"") ;
                     File outPrint = new File(aimPath+"\\"+cutOriginPathFile.getName()+filename);
                     outPrint.mkdirs();
-                    getFileList(files[i].getAbsolutePath(),cutOriginPath,aimPath); // 迭代
-                } else if (fileName.endsWith("xlsx")) {     // 判断文件名是否以.xlsx结尾
+                    getFileList(files[i].getAbsolutePath(),cutOriginPath,aimPath);
+                } else if (fileName.endsWith("xlsx")) {
                     String strFileName = files[i].getName();
-                    String strFiledir = files[i].getAbsolutePath();
-                        //加工文件名称  1、去除输入路径的文件名：F:\AAAA\AAASS\A.XLDX----->F:\AAAA\AAASS\
-                    String str1=strFiledir.replace(strFileName,"");
-                        //加工文件名称  2、去除输入路径的根目录：F:\AAAA\AAASS\------>\AAASS\
-                    String str2=str1.replace(cutOriginPath,"");
-                        //加工文件名称  3、增加输出目录的根目录：\AAASS\------>F:\asd\AAASS\
-                    String str3=aimPath+"\\"+cutOriginPathFile.getName()+str2+strFileName.substring(0,strFileName.indexOf(".xlsx")) + ".html";
-                        //输出文件  Els_x_toHtml（输入路径，输出路径）
+                    String strFiledir = files[i].getAbsolutePath(); //加工文件名称  1、去除输入路径的文件名：F:\AAAA\AAASS\A.XLDX----->F:\AAAA\AAASS\
+                    String str1=strFiledir.replace(strFileName,"");//加工文件名称  2、去除输入路径的根目录：F:\AAAA\AAASS\------>\AAASS\
+                    String str2=str1.replace(cutOriginPath,"");//加工文件名称  3、增加输出目录的根目录：\AAASS\------>F:\asd\AAASS\
+                    String str3=aimPath+"\\"+cutOriginPathFile.getName()+str2+strFileName.substring(0,strFileName.indexOf(".xlsx")) + ".html";//输出文件  Els_x_toHtml（输入路径，输出路径）
                     File filetest = new File(str3);
                     filetest.mkdirs();
                     ToHtml toHtml= new ToHtml();
                     try{ toHtml.excelToHtml(strFiledir,str3+"\\"+strFileName+".html");}catch (IOException e){e.printStackTrace();}
-                }else if (fileName.endsWith("xls")) {     // 判断文件名是否以.xls结尾
+                }else if (fileName.endsWith("xls")) {
                     String strFileName = files[i].getName();
                     String strFiledir = files[i].getAbsolutePath();
-                    //加工文件名称  1、去除输入路径的文件名：F:\AAAA\AAASS\A.XLDX----->F:\AAAA\AAASS\
                     String str1 = strFiledir.replace(strFileName, "");
-                    //加工文件名称  2、去除输入路径的根目录：F:\AAAA\AAASS\------>\AAASS\
                     String str2 = str1.replace(cutOriginPath, "");
-                    //加工文件名称  3、增加输出目录的根目录：\AAASS\------>F:\asd\AAASS\
                     String str3 = aimPath + "\\" + cutOriginPathFile.getName() + str2 + strFileName.substring(0, strFileName.indexOf(".xls")) + ".html";
-                    //输出文件  Els_x_toHtml（输入路径，输出路径）
                     File filetest = new File(str3);
                     filetest.mkdirs();
                     ToHtml toHtml = new ToHtml();
