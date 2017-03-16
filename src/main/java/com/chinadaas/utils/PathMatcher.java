@@ -25,11 +25,16 @@ public class PathMatcher {
                         if(file.isDirectory()){
                             System.out.println("输入文件为目录，请输入正确的Excel文件");
                         } else{
-                            if(file.getName().endsWith(".xls")||file.getName().endsWith(".xlsx")){
+                            if(file.getName().endsWith(".xlsx")){
                                 ToHtml toHtml = new ToHtml();
-                                toHtml.excelToHtml(dirPath,"F:\\" + file.getName() + ".html");
-                                System.out.println("转化后的输出路径为："+"F:\\"+file.getName()+".html");
-                            }else{
+                                toHtml.excelToHtml(dirPath,"F:\\" + file.getName().substring(0,file.getName().indexOf(".xlsx")) + ".html");
+                                System.out.println("转化后的输出路径为："+"F:\\" + file.getName().substring(0, file.getName().indexOf(".xlsx")) + ".html");
+                            }else if(file.getName().endsWith(".xls")){
+                                ToHtml toHtml = new ToHtml();
+                                toHtml.excelToHtml(dirPath,"F:\\" + file.getName().substring(0,file.getName().indexOf(".xls")) + ".html");
+                                System.out.println("转化后的输出路径为："+"F:\\" + file.getName().substring(0, file.getName().indexOf(".xls")) + ".html");
+                            }
+                            else{
                                 System.out.println("输入的不是正确的Excel格式文件");
                             }
                         }

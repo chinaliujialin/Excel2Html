@@ -20,7 +20,6 @@ public class HSSFHtmlHelper implements HtmlHelper {
         // If there is no custom palette, then this creates a new one that is
         // a copy of the default
         colors = wb.getCustomPalette();
-        System.out.print(colors);
     }
 
     public void colorStyles(CellStyle style, Formatter out) {
