@@ -6,7 +6,7 @@ import java.io.IOException;
 /**
  * Created by pc on 2017/3/16.
  */
-public class PathChenger {
+public class FileUtils {
 
 
     private  String inDirPath=null;
@@ -14,7 +14,7 @@ public class PathChenger {
     private File outPath;
     private File inPath;
 
-    public PathChenger (String inPutPath,String outPutPath){
+    public FileUtils(String inPutPath, String outPutPath){
         this.inDirPath=inPutPath;
         this.outDirPath=outPutPath;
         this.inPath=new File(inDirPath);
@@ -76,7 +76,11 @@ public class PathChenger {
                     File filetest = new File(str3);
                     filetest.mkdirs();
                     ToHtml toHtml= new ToHtml();
-                    try{ toHtml.excelToHtml(strFiledir,str3+"\\"+strFileName+".html");}catch (IOException e){e.printStackTrace();}
+                    try{
+                        toHtml.excelToHtml(strFiledir,str3+"\\"+strFileName.substring(0, strFileName.indexOf(".xlsx"))+".html");
+                    }catch (IOException e){
+                        e.printStackTrace();
+                    }
                 }else if (fileName.endsWith("xls")) {
                     String strFileName = files[i].getName();
                     String strFiledir = files[i].getAbsolutePath();
@@ -87,7 +91,7 @@ public class PathChenger {
                     filetest.mkdirs();
                     ToHtml toHtml = new ToHtml();
                     try {
-                        toHtml.excelToHtml(strFiledir, str3 + "\\" + strFileName + ".html");
+                        toHtml.excelToHtml(strFiledir, str3 + "\\" + strFileName.substring(0, strFileName.indexOf(".xls")) + ".html");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

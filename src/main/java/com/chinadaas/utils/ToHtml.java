@@ -129,7 +129,8 @@ public class ToHtml {
     private void constructTabHeader()
     {
     	out.format("<div id=\"main\">");
-    	out.format("<div class=\"ui-widget-header ui-corner-top\" >%n");
+    	out.format("<div id='main22' class='bannermid'>");
+    	//out.format("<div class=\"ui-widget-header ui-corner-top\" >%n");
     	out.format("<ul>%n");
     	for(int i=0;i<sheetNo;i++)
     	{
@@ -198,6 +199,25 @@ public class ToHtml {
                 out.format("</script>%n");
                 out.format("</head>%n");
                 out.format("<body>%n");
+                out.format("<script>\n" +
+                        "$(document).ready(function() {$(\"#main\").tabs(); });</script>\n" +
+                        "</head>\n" +
+                        "<body>\n" +
+                        "<script type=\"text/javascript\">\n" +
+                        "function ClickMenu(diving) {\n" +
+                        "//alert(diving);\n" +
+                        "if (document.getElementById(diving).style.display == \"none\") {\n" +
+                        "document.getElementById(diving).style.display = 'block';\n" +
+                        "}\n" +
+                        "else {\n" +
+                        "document.getElementById(diving).style.display = 'none';\n" +
+                        "}\n" +
+                        "}\n" +
+                        "</script>\n" +
+                        "<div class='banner2'>\n" +
+                        "<img src='images/plus.gif' height='15' width='15' border='0' alt='' />\n" +
+                        "<a onclick=ClickMenu('main22')>目录索引栏开关</a>\n" +
+                        "</div>");
             }
             
             print();
@@ -414,9 +434,15 @@ public class ToHtml {
             Row row = rows.next();
 
             if(row.getRowNum()!=0){
-                out.format("  <tr>%n");
-                out.format("    <td class=%s>%d</td>%n", ROW_HEAD_CLASS,
-                        row.getRowNum() );
+                if(row.getRowNum()==1){
+                    out.format("  <tr bgcolor=red>%n");
+                    out.format("    <td class=%s>%d</td>%n", ROW_HEAD_CLASS,
+                            row.getRowNum() );
+                }else{
+                    out.format("  <tr>%n");
+                    out.format("    <td class=%s>%d</td>%n", ROW_HEAD_CLASS,
+                            row.getRowNum() );
+                }
             }
             for (int i = firstColumn; i < endColumn; i++) {
                 String content = "&nbsp;";

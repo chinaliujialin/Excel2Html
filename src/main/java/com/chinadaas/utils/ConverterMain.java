@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * Created by pc on 2017/3/15.
  */
-public class PathMatcher {
+public class ConverterMain {
 
     public static void main(String [] args)throws Exception{
         System.out.println("请输入要进行的操作编号（1、2、3）：\n1、单个文件转换\n2、文件夹转换\n3、结束");
@@ -48,7 +48,7 @@ public class PathMatcher {
                     String dirInPath =input.nextLine();
                     System.out.println("请输入文件输出目录地址：（如直接输入名称则在软件根目录下建立文件夹）");
                     String dirOutPath =input.nextLine();
-                    PathChenger pathChenger = new PathChenger(dirInPath,dirOutPath);
+                    FileUtils pathChenger = new FileUtils(dirInPath,dirOutPath);
                 }
                 else if(type.equals("3")==true){
                     System.out.println("结束"+type);
