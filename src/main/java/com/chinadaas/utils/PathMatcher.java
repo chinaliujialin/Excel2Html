@@ -43,7 +43,7 @@ public class PathMatcher {
                     String dirInPath =input.nextLine();
                     System.out.println("请输入文件输出目录地址：（如直接输入名称则在软件根目录下建立文件夹）");
                     String dirOutPath =input.nextLine();
-                    Dir_todir dir_todir = new Dir_todir(dirInPath,dirOutPath);
+                    PathChenger pathChenger = new PathChenger(dirInPath,dirOutPath);
                 }
                 else if(type.equals("3")==true){
                     System.out.println("结束"+type);

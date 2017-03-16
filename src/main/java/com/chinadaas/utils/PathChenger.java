@@ -4,21 +4,22 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by pc on 2017/3/13.
+ * Created by pc on 2017/3/16.
  */
-public class Dir_todir {
+public class PathChenger {
+
 
     private  String inDirPath=null;
     private  String outDirPath=null;
     private File outPath;
     private File inPath;
 
-    public Dir_todir (String inPutPath,String outPutPath){
+    public PathChenger (String inPutPath,String outPutPath){
         this.inDirPath=inPutPath;
         this.outDirPath=outPutPath;
         this.inPath=new File(inDirPath);
         this.outPath= new File(outDirPath);
-       testInputPath();
+        testInputPath();
     }
 
     private void testInputPath(){
@@ -40,26 +41,14 @@ public class Dir_todir {
         System.out.print("请按任意键继续");
     }
 
-    private void testOutputPath(){
-        if (outPath.exists()) {
-            if (outPath.isDirectory()) {
-                System.out.println("输出路径存在");
-            } else {
-                System.out.println("输入路径不是文件夹");
-            }
-        } else {
-            System.out.println("输入路径不存在");
-        }
-        System.out.print("请按任意键继续");
-    }
-
-    public void createdir() throws IOException{
+    public void createdir() throws IOException {
         String lastName =inPath.getName();
         outPath = new File(outDirPath);
         String outPutPathName =outPath.getPath()+"\\"+lastName;  //输出的路径名
         outPath=new File(outPutPathName);
         outPath.mkdirs();
     }
+
     /**
      * 为文件生成多级目录
      *@param originPath,源目录文件根地址
