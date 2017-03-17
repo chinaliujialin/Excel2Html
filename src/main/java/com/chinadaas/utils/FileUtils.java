@@ -66,8 +66,9 @@ public class FileUtils {
         System.out.println("你输入的是目录转换："+type);
         System.out.println("请输入文件目录地址：");
         String dirInPath =input.nextLine();
-        System.out.println("请输入文件输出目录地址：（如直接输入名称则在软件根目录下建立文件夹）");
+        System.out.println("请输入文件输出目录地址：");
         String dirOutPath =input.nextLine();
+        System.out.print(dirInPath+"\n"+dirOutPath);
         FileUtils pathChenger = new FileUtils(dirInPath,dirOutPath);
     }
 

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<link href="excelStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {$("#main").tabs(); });</script>
+</head>
+<body>
+<script>
+$(document).ready(function() {$("#main").tabs(); });</script>
+</head>
+<body>
+<script type="text/javascript">
+function ClickMenu(diving) {
+//alert(diving);
+if (document.getElementById(diving).style.display == "none") {
+document.getElementById(diving).style.display = 'block';
+}
+else {
+document.getElementById(diving).style.display = 'none';
+}
+}
+</script>
+<div class='banner2'>
+<button type="button"onclick=ClickMenu('main22')>目录索引栏开关</button>
+</div><div id="main"><div id='main22' class='bannermid'><ul>
+<li>
+<a href ="#tabs-1">Sheet1</a>
+</li>
+</div><div id="tabs-1">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_00 >1</td>
+    <td class=style_00 >2</td>
+    <td class=style_00 >3</td>
+    <td class=style_00 >4</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_00 >8</td>
+    <td class=style_00 >7</td>
+    <td class=style_00 >6</td>
+    <td class=style_00 >5</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_00 >9</td>
+    <td class=style_00 >0</td>
+    <td class=style_00 >0</td>
+    <td class=style_00 >1</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_00 >1</td>
+    <td class=style_00 >4</td>
+    <td class=style_00 >3</td>
+    <td class=style_00 >2</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

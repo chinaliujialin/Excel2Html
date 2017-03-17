@@ -1,0 +1,2247 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<link href="excelStyle.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {$("#main").tabs(); });</script>
+</head>
+<body>
+<script>
+$(document).ready(function() {$("#main").tabs(); });</script>
+</head>
+<body>
+<script type="text/javascript">
+function ClickMenu(diving) {
+//alert(diving);
+if (document.getElementById(diving).style.display == "none") {
+document.getElementById(diving).style.display = 'block';
+}
+else {
+document.getElementById(diving).style.display = 'none';
+}
+}
+</script>
+<div class='banner2'>
+<button type="button"onclick=ClickMenu('main22')>目录索引栏开关</button>
+</div><div id="main"><div id='main22' class='bannermid'><ul>
+<li>
+<a href ="#tabs-1">目录</a>
+</li>
+<li>
+<a href ="#tabs-2">司法诉讼信息</a>
+</li>
+<li>
+<a href ="#tabs-3">司法失信被执行人</a>
+</li>
+<li>
+<a href ="#tabs-4">企业行政处罚案件基本信息表</a>
+</li>
+<li>
+<a href ="#tabs-5">企业违法行为及处罚信息</a>
+</li>
+<li>
+<a href ="#tabs-6">企业行政处罚当事人信息</a>
+</li>
+</div><div id="tabs-1">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_25 >EDW-SDM数据标准化层-数据模型</td>
+    <td class=style_25 >&nbsp;</td>
+    <td class=style_25 >&nbsp;</td>
+    <td class=style_25 >&nbsp;</td>
+    <td class=style_25 >&nbsp;</td>
+    <td class=style_25 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_1f >&nbsp;</td>
+    <td class=style_1f >&nbsp;</td>
+    <td class=style_1f >&nbsp;</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_20 >编号</td>
+    <td class=style_20 >数据来源</td>
+    <td class=style_20 >表名</td>
+    <td class=style_20 >中文名称</td>
+    <td class=style_20 >主键</td>
+    <td class=style_20 >备注</td>
+    <td class=style_20 >接入状态</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_21 >1</td>
+    <td class=style_26 >企业信息</td>
+    <td class=style_22 >S_EN_CASEBASEINFO</td>
+    <td class=style_23 style="text-align: left;">企业行政处罚案件基本信息表</td>
+    <td class=style_23 style="text-align: left;">DATE_SEQ</td>
+    <td class=style_23 >&nbsp;</td>
+    <td class=style_24 >N</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_21 >2</td>
+    <td class=style_26 >&nbsp;</td>
+    <td class=style_22 >S_EN_CASEIRREGPUNISHINFO</td>
+    <td class=style_23 style="text-align: left;">企业违法行为及处罚信息</td>
+    <td class=style_23 style="text-align: left;">DATE_SEQ</td>
+    <td class=style_23 >&nbsp;</td>
+    <td class=style_24 >N</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>4</td>
+    <td class=style_21 >3</td>
+    <td class=style_26 >&nbsp;</td>
+    <td class=style_22 >S_EN_CASEPARTYINFO</td>
+    <td class=style_23 style="text-align: left;">企业行政处罚当事人信息</td>
+    <td class=style_23 style="text-align: left;">DATE_SEQ</td>
+    <td class=style_23 >&nbsp;</td>
+    <td class=style_24 >N</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>5</td>
+    <td class=style_21 >4</td>
+    <td class=style_27 >法院网站</td>
+    <td class=style_22 >S_JU_SUED</td>
+    <td class=style_21 style="text-align: left;">司法诉讼信息</td>
+    <td class=style_23 style="text-align: left;">DATE_SEQ</td>
+    <td class=style_23 >&nbsp;</td>
+    <td class=style_24 >N</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>6</td>
+    <td class=style_21 >5</td>
+    <td class=style_28 >&nbsp;</td>
+    <td class=style_22 >S_JU_LESSCREDITIMP</td>
+    <td class=style_21 style="text-align: left;">司法失信被执行</td>
+    <td class=style_23 style="text-align: left;">DATE_SEQ</td>
+    <td class=style_23 >&nbsp;</td>
+    <td class=style_24 >N</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tabs-2">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_01 ></td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_03 >Name</td>
+    <td class=style_03 >Code</td>
+    <td class=style_03 >Data Type</td>
+    <td class=style_03 >Length</td>
+    <td class=style_03 >Precision</td>
+    <td class=style_03 >P</td>
+    <td class=style_03 >F</td>
+    <td class=style_03 >M</td>
+    <td class=style_04 >可否为空</td>
+    <td class=style_04 >编码项目</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_05 >唯一标识</td>
+    <td class=style_05 >FSS_GUID</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_05 >案号</td>
+    <td class=style_05 >FSS_CASENUMBER</td>
+    <td class=style_05 >VARCHAR2(500)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>4</td>
+    <td class=style_05 >状态</td>
+    <td class=style_05 >FSS_STATUS</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>5</td>
+    <td class=style_05 >执行法院</td>
+    <td class=style_05 >FSS_ENFCOURT</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>6</td>
+    <td class=style_05 >执行标的</td>
+    <td class=style_05 >FSS_MONEY</td>
+    <td class=style_05 >VARCHAR2(500)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>7</td>
+    <td class=style_05 >关注次数</td>
+    <td class=style_05 >FSS_FOCUSNB</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>8</td>
+    <td class=style_05 >身份证号码/组织机构代码</td>
+    <td class=style_05 >FSS_REGNO</td>
+    <td class=style_05 >VARCHAR2(500)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>9</td>
+    <td class=style_05 >被执行人姓名/名称</td>
+    <td class=style_05 >FSS_NAME</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>10</td>
+    <td class=style_05 >立案时间</td>
+    <td class=style_05 >FSS_TIME</td>
+    <td class=style_05 >VARCHAR2(200)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>11</td>
+    <td class=style_05 >插入时间</td>
+    <td class=style_05 >FSS_IDT</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>12</td>
+    <td class=style_05 >修改时间</td>
+    <td class=style_05 >FSS_UDT</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>13</td>
+    <td class=style_05 >状态</td>
+    <td class=style_05 >FSS_STATE</td>
+    <td class=style_05 >NUMBER(1)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>14</td>
+    <td class=style_05 >表自增列</td>
+    <td class=style_05 >FSS_ID1</td>
+    <td class=style_05 >VARCHAR2(32)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>15</td>
+    <td class=style_05 >源自增列</td>
+    <td class=style_05 >FSS_SID</td>
+    <td class=style_05 >VARCHAR2(32)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>16</td>
+    <td class=style_05 >执行法院区域代码</td>
+    <td class=style_05 >FSS_AREACODE</td>
+    <td class=style_05 >VARCHAR2(200)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>17</td>
+    <td class=style_05 >被执行人姓名/名称关联列</td>
+    <td class=style_05 >FSS_NAME_GLLZD</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>18</td>
+    <td class=style_05 >法院ID</td>
+    <td class=style_05 >FSS_ENFCOURT_ID</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>19</td>
+    <td class=style_05 >结案时间(首次检测到状态改变的时间)</td>
+    <td class=style_05 >FSS_ENDDATE</td>
+    <td class=style_05 >VARCHAR2(200)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>20</td>
+    <td class=style_05 >退出时间</td>
+    <td class=style_05 >FSS_OUTDATE</td>
+    <td class=style_05 >VARCHAR2(10)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>21</td>
+    <td class=style_05 >MD5码</td>
+    <td class=style_05 >FSS_MD5</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>22</td>
+    <td class=style_10 >数据最后更新时间</td>
+    <td class=style_11 >DATE_UDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >36</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>23</td>
+    <td class=style_10 >数据插入时间</td>
+    <td class=style_11 >DATE_IDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >&nbsp;</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>24</td>
+    <td class=style_10 >数据批次号</td>
+    <td class=style_11 >JOBID</td>
+    <td class=style_11 >VARCHAR2(10)</td>
+    <td class=style_11 >10</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>25</td>
+    <td class=style_10 >数据唯一ID</td>
+    <td class=style_11 >DATE_SEQ</td>
+    <td class=style_11 >VARCHAR2(36)</td>
+    <td class=style_11 >6</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tabs-3">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_01 ></td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_03 >Name</td>
+    <td class=style_03 >Code</td>
+    <td class=style_03 >Data Type</td>
+    <td class=style_03 >Length</td>
+    <td class=style_03 >Precision</td>
+    <td class=style_03 >P</td>
+    <td class=style_03 >F</td>
+    <td class=style_03 >M</td>
+    <td class=style_04 >可否为空</td>
+    <td class=style_04 >编码项目</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_05 >FSX_LB</td>
+    <td class=style_05 >类别</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_05 >FSX_NAME</td>
+    <td class=style_05 >被执行人姓名/名称</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>4</td>
+    <td class=style_05 >FSX_SEX</td>
+    <td class=style_05 >性别</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>5</td>
+    <td class=style_05 >FSX_AGE</td>
+    <td class=style_05 >年龄</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>6</td>
+    <td class=style_05 >FSX_SFZH_ALL</td>
+    <td class=style_29 >身份证号明文</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>7</td>
+    <td class=style_05 >FSX_FRDB</td>
+    <td class=style_05 >法定代表人或者负责人姓名</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>8</td>
+    <td class=style_05 >FSX_ZXFY</td>
+    <td class=style_05 >执行法院</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>9</td>
+    <td class=style_05 >FSX_SF</td>
+    <td class=style_05 >省份</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>10</td>
+    <td class=style_05 >FSX_ZXYJ</td>
+    <td class=style_05 >执行依据文号</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>11</td>
+    <td class=style_05 >FSX_LASJ</td>
+    <td class=style_05 >立案时间</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>12</td>
+    <td class=style_05 >FSX_AH</td>
+    <td class=style_05 >案号</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>13</td>
+    <td class=style_05 >FSX_ZCZXDW</td>
+    <td class=style_05 >做出执行依据单位</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>14</td>
+    <td class=style_05 >FSX_LXQK</td>
+    <td class=style_05 >被执行人的履行情况</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>15</td>
+    <td class=style_05 >FSX_SXJTQX</td>
+    <td class=style_05 >失信被执行人行为具体情形</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>16</td>
+    <td class=style_05 >FSX_FBDATE</td>
+    <td class=style_05 >发布时间</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>17</td>
+    <td class=style_05 >FSX_GZCS</td>
+    <td class=style_05 >关注次数</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>18</td>
+    <td class=style_05 >FSX_SXWS</td>
+    <td class=style_05 >生效法律文书确定的义务</td>
+    <td class=style_05 >CLOB</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>19</td>
+    <td class=style_05 >FSX_KEY</td>
+    <td class=style_05 >业务主键</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>20</td>
+    <td class=style_05 >FSX_AREACODE</td>
+    <td class=style_05 >地区维度码</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>21</td>
+    <td class=style_05 >FSX_YLX</td>
+    <td class=style_05 >已履行</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>22</td>
+    <td class=style_05 >FSX_WLX</td>
+    <td class=style_05 >未履行</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>23</td>
+    <td class=style_05 >FSX_IDT</td>
+    <td class=style_05 >插入时间</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>24</td>
+    <td class=style_05 >FSX_UDT</td>
+    <td class=style_05 >修改时间</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>25</td>
+    <td class=style_05 >FSX_ID</td>
+    <td class=style_05 >自增列</td>
+    <td class=style_05 >VARCHAR2(32)</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>26</td>
+    <td class=style_05 >FSX_ENDDATE</td>
+    <td class=style_05 >退出日期</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_05 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>27</td>
+    <td class=style_10 >数据最后更新时间</td>
+    <td class=style_11 >DATE_UDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >36</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>28</td>
+    <td class=style_10 >数据插入时间</td>
+    <td class=style_11 >DATE_IDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >&nbsp;</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>29</td>
+    <td class=style_10 >数据批次号</td>
+    <td class=style_11 >JOBID</td>
+    <td class=style_11 >VARCHAR2(10)</td>
+    <td class=style_11 >10</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>30</td>
+    <td class=style_10 >数据唯一ID</td>
+    <td class=style_11 >DATE_SEQ</td>
+    <td class=style_11 >VARCHAR2(36)</td>
+    <td class=style_11 >6</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tabs-4">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_01 ></td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_03 >Name</td>
+    <td class=style_03 >Code</td>
+    <td class=style_03 >Data Type</td>
+    <td class=style_03 >Length</td>
+    <td class=style_03 >Precision</td>
+    <td class=style_03 >P</td>
+    <td class=style_03 >F</td>
+    <td class=style_03 >M</td>
+    <td class=style_04 >可否为空</td>
+    <td class=style_04 >编码项目</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_05 >省份</td>
+    <td class=style_05 >S_EXT_NODENUM</td>
+    <td class=style_05 >VARCHAR2(40)</td>
+    <td class=style_05 >40</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >X</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_05 >案件记录ID</td>
+    <td class=style_05 >CASEINFOID</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >X</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>4</td>
+    <td class=style_05 >案件编号</td>
+    <td class=style_05 >CASENO</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0b >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>5</td>
+    <td class=style_05 >案件名称</td>
+    <td class=style_05 >CASENAME</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_09 >&nbsp;</td>
+    <td class=style_0c >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>6</td>
+    <td class=style_05 >案发时间</td>
+    <td class=style_05 >CASETIME</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >6</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>7</td>
+    <td class=style_05 >案发地</td>
+    <td class=style_05 >CASESPOT</td>
+    <td class=style_05 >VARCHAR2(500)</td>
+    <td class=style_05 >500</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>8</td>
+    <td class=style_05 >案发地行政区划</td>
+    <td class=style_05 >CASESCEDISTRICT</td>
+    <td class=style_05 >VARCHAR2(6)</td>
+    <td class=style_05 >6</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>9</td>
+    <td class=style_05 >案由</td>
+    <td class=style_05 >CASEREASON</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>10</td>
+    <td class=style_05 >案值</td>
+    <td class=style_05 >CASEVAL</td>
+    <td class=style_05 >NUMBER(18,6)</td>
+    <td class=style_05 >18</td>
+    <td class=style_05 >6</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>11</td>
+    <td class=style_05 >案件结果</td>
+    <td class=style_05 >CASERESULT</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>12</td>
+    <td class=style_05 >案件类型</td>
+    <td class=style_05 >CASETYPE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>13</td>
+    <td class=style_05 >适用程序</td>
+    <td class=style_05 >APPPROCEDURE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>14</td>
+    <td class=style_05 >立案日期</td>
+    <td class=style_05 >CASEFIDATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>15</td>
+    <td class=style_05 >立案机关</td>
+    <td class=style_05 >CASEFIAUTH</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>16</td>
+    <td class=style_05 >办案机构</td>
+    <td class=style_05 >CASEDEP</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>17</td>
+    <td class=style_05 >执行日期</td>
+    <td class=style_05 >EXEDATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>18</td>
+    <td class=style_05 >执行类别</td>
+    <td class=style_05 >EXESORT</td>
+    <td class=style_05 >VARCHAR2(2)</td>
+    <td class=style_05 >2</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>19</td>
+    <td class=style_05 >未执行原因类别</td>
+    <td class=style_05 >UNEXEREASORT</td>
+    <td class=style_05 >VARCHAR2(1)</td>
+    <td class=style_05 >1</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>20</td>
+    <td class=style_05 >未执行原因</td>
+    <td class=style_05 >UNEXEREA</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_0f >1,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>21</td>
+    <td class=style_05 >销案日期</td>
+    <td class=style_05 >CLOCASEDATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>22</td>
+    <td class=style_05 >销案理由</td>
+    <td class=style_05 >CLOCASEREA</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>23</td>
+    <td class=style_05 >上报机关</td>
+    <td class=style_05 >SUPAUTH</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>24</td>
+    <td class=style_05 >报送日期</td>
+    <td class=style_05 >REPODATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>25</td>
+    <td class=style_05 >ENDCASDATE</td>
+    <td class=style_05 >ENDCASDATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>26</td>
+    <td class=style_05 >CASESTATE</td>
+    <td class=style_05 >CASESTATE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>27</td>
+    <td class=style_05 >采集数据时间戳</td>
+    <td class=style_05 >S_EXT_TIMESTAMP</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >6</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>28</td>
+    <td class=style_05 >采集数据批次号</td>
+    <td class=style_05 >S_EXT_BATCH</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>29</td>
+    <td class=style_05 >采集数据序列</td>
+    <td class=style_05 >S_EXT_SEQUENCE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>30</td>
+    <td class=style_05 >采集数据状态</td>
+    <td class=style_05 >S_EXT_VALIDFLAG</td>
+    <td class=style_05 >VARCHAR2(1)</td>
+    <td class=style_05 >1</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>31</td>
+    <td class=style_10 >数据最后更新时间</td>
+    <td class=style_11 >DATE_UDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >36</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_13 >X</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>32</td>
+    <td class=style_10 >数据插入时间</td>
+    <td class=style_11 >DATE_IDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >&nbsp;</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>33</td>
+    <td class=style_10 >数据批次号</td>
+    <td class=style_11 >JOBID</td>
+    <td class=style_11 >VARCHAR2(10)</td>
+    <td class=style_11 >10</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>34</td>
+    <td class=style_10 >数据唯一ID</td>
+    <td class=style_11 >DATE_SEQ</td>
+    <td class=style_11 >VARCHAR2(36)</td>
+    <td class=style_11 >6</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tabs-5">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_01 ></td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_03 >Name</td>
+    <td class=style_03 >Code</td>
+    <td class=style_03 >Data Type</td>
+    <td class=style_03 >Length</td>
+    <td class=style_03 >Precision</td>
+    <td class=style_03 >P</td>
+    <td class=style_03 >F</td>
+    <td class=style_03 >M</td>
+    <td class=style_04 >可否为空</td>
+    <td class=style_04 >编码项目</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_05 >省份</td>
+    <td class=style_05 >S_EXT_NODENUM</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >X</td>
+    <td class=style_0c >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_05 >案件记录ID</td>
+    <td class=style_05 >CASEINFOID</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >X</td>
+    <td class=style_0c >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>4</td>
+    <td class=style_05 >处罚序号</td>
+    <td class=style_05 >ILLEGACT_ID</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>5</td>
+    <td class=style_05 >违法行为种类</td>
+    <td class=style_05 >ILLEGACTTYPE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0c >&nbsp;</td>
+    <td class=style_0c >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>6</td>
+    <td class=style_05 >违法行为</td>
+    <td class=style_05 >ILLEGACT</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>7</td>
+    <td class=style_05 >违法行为发现途径</td>
+    <td class=style_05 >ILLACTFINDAVE</td>
+    <td class=style_05 >VARCHAR2(2)</td>
+    <td class=style_05 >2</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>8</td>
+    <td class=style_05 >违法所得(单位：万元)</td>
+    <td class=style_05 >ILLINCOME</td>
+    <td class=style_05 >NUMBER(18,6)</td>
+    <td class=style_05 >18</td>
+    <td class=style_05 >6</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>9</td>
+    <td class=style_05 >定性依据</td>
+    <td class=style_05 >QUAGIST</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>10</td>
+    <td class=style_05 >处罚依据</td>
+    <td class=style_05 >PENBASIS</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>11</td>
+    <td class=style_05 >处罚种类</td>
+    <td class=style_05 >PENTYPE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>12</td>
+    <td class=style_05 >处罚结果</td>
+    <td class=style_05 >PENRESULT</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>13</td>
+    <td class=style_05 >罚款金额(单位：万元)</td>
+    <td class=style_05 >PENAM</td>
+    <td class=style_05 >NUMBER(18,6)</td>
+    <td class=style_05 >18</td>
+    <td class=style_05 >6</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>14</td>
+    <td class=style_05 >没收金额(单位：万元)</td>
+    <td class=style_05 >FORFAM</td>
+    <td class=style_05 >NUMBER(18,6)</td>
+    <td class=style_05 >18</td>
+    <td class=style_05 >6</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>15</td>
+    <td class=style_05 >变价金额(单位：万元)</td>
+    <td class=style_05 >APPRCURAM</td>
+    <td class=style_05 >NUMBER(18,6)</td>
+    <td class=style_05 >18</td>
+    <td class=style_05 >6</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>16</td>
+    <td class=style_05 >处罚决定书签发日期</td>
+    <td class=style_05 >PENDECISSDATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>17</td>
+    <td class=style_05 >处罚执行情况</td>
+    <td class=style_05 >PENEXEST</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_0f >1,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>18</td>
+    <td class=style_05 >处罚机关</td>
+    <td class=style_05 >PENAUTH</td>
+    <td class=style_05 >VARCHAR2(200)</td>
+    <td class=style_05 >200</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>19</td>
+    <td class=style_05 >处罚决定书文号</td>
+    <td class=style_05 >PENDECNO</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>20</td>
+    <td class=style_05 >主要违法事实</td>
+    <td class=style_05 >ILLEGFACT</td>
+    <td class=style_05 >VARCHAR2(2000)</td>
+    <td class=style_0f >2,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>21</td>
+    <td class=style_05 >复议情况</td>
+    <td class=style_05 >REVST</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_0f >1,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>22</td>
+    <td class=style_05 >诉讼情况</td>
+    <td class=style_05 >LIT</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_0f >1,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>23</td>
+    <td class=style_05 >是否注销</td>
+    <td class=style_05 >ISCAN</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>24</td>
+    <td class=style_05 >移送司法机关情况</td>
+    <td class=style_05 >TOJUDST</td>
+    <td class=style_05 >VARCHAR2(1000)</td>
+    <td class=style_0f >1,000</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>25</td>
+    <td class=style_05 >采集数据时间戳</td>
+    <td class=style_05 >S_EXT_TIMESTAMP</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >6</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>26</td>
+    <td class=style_05 >采集数据批次号</td>
+    <td class=style_05 >S_EXT_BATCH</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>27</td>
+    <td class=style_05 >采集数据序列</td>
+    <td class=style_05 >S_EXT_SEQUENCE</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>28</td>
+    <td class=style_05 >采集数据有效性标识</td>
+    <td class=style_05 >S_EXT_VALIDFLAG</td>
+    <td class=style_05 >VARCHAR2(1)</td>
+    <td class=style_05 >1</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>29</td>
+    <td class=style_10 >数据最后更新时间</td>
+    <td class=style_11 >DATE_UDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >36</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_13 >X</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>30</td>
+    <td class=style_10 >数据插入时间</td>
+    <td class=style_11 >DATE_IDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >&nbsp;</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>31</td>
+    <td class=style_10 >数据批次号</td>
+    <td class=style_11 >JOBID</td>
+    <td class=style_11 >VARCHAR2(10)</td>
+    <td class=style_11 >10</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>32</td>
+    <td class=style_10 >数据唯一ID</td>
+    <td class=style_11 >DATE_SEQ</td>
+    <td class=style_11 >VARCHAR2(36)</td>
+    <td class=style_11 >6</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div id="tabs-6">
+<table class=excelDefaults>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<col/>
+<tbody>
+    <td class=style_01 ></td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+    <td class=style_00 >&nbsp;</td>
+  </tr>
+  <tr bgcolor=red>
+    <td class=rowHeader>1</td>
+    <td class=style_03 >Name</td>
+    <td class=style_03 >Code</td>
+    <td class=style_03 >Data Type</td>
+    <td class=style_03 >Length</td>
+    <td class=style_03 >Precision</td>
+    <td class=style_03 >P</td>
+    <td class=style_03 >F</td>
+    <td class=style_03 >M</td>
+    <td class=style_04 >可否为空</td>
+    <td class=style_04 >编码项目</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>2</td>
+    <td class=style_05 >省份</td>
+    <td class=style_05 >S_EXT_NODENUM</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >X</td>
+    <td class=style_0c >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>3</td>
+    <td class=style_05 >案件记录ID</td>
+    <td class=style_05 >CASEINFOID</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >X</td>
+    <td class=style_0c >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>4</td>
+    <td class=style_05 >序号</td>
+    <td class=style_05 >P_ID</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>5</td>
+    <td class=style_05 >当事人类型</td>
+    <td class=style_05 >PARTYTYPE</td>
+    <td class=style_05 >VARCHAR2(1)</td>
+    <td class=style_05 >1</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0c >&nbsp;</td>
+    <td class=style_0c >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>6</td>
+    <td class=style_05 >当事人名称</td>
+    <td class=style_05 >NAME</td>
+    <td class=style_05 >VARCHAR2(500)</td>
+    <td class=style_05 >500</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>7</td>
+    <td class=style_18 >主体身份代码</td>
+    <td class=style_18 >PRIPID</td>
+    <td class=style_18 >VARCHAR2(36)</td>
+    <td class=style_18 >36</td>
+    <td class=style_19 >&nbsp;</td>
+    <td class=style_1a >&nbsp;</td>
+    <td class=style_1b >&nbsp;</td>
+    <td class=style_1a >&nbsp;</td>
+    <td class=style_1c >&nbsp;</td>
+    <td class=style_1c >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>8</td>
+    <td class=style_05 >注册号</td>
+    <td class=style_05 >REGNO</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>9</td>
+    <td class=style_05 >法定代表人</td>
+    <td class=style_05 >LEREP</td>
+    <td class=style_05 >VARCHAR2(200)</td>
+    <td class=style_05 >200</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>10</td>
+    <td class=style_05 >自然人性别</td>
+    <td class=style_05 >SEX</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>11</td>
+    <td class=style_05 >地址</td>
+    <td class=style_05 >ADDR</td>
+    <td class=style_05 >VARCHAR2(600)</td>
+    <td class=style_05 >600</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>12</td>
+    <td class=style_05 >限期改正日期</td>
+    <td class=style_05 >TERCORDATE</td>
+    <td class=style_05 >DATE</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>13</td>
+    <td class=style_05 >年龄</td>
+    <td class=style_05 >AGE</td>
+    <td class=style_05 >NUMBER(2)</td>
+    <td class=style_05 >2</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>14</td>
+    <td class=style_05 >职业</td>
+    <td class=style_05 >OCCUPATION</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>15</td>
+    <td class=style_05 >居所</td>
+    <td class=style_05 >HOUSE</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>16</td>
+    <td class=style_05 >联系电话</td>
+    <td class=style_05 >TEL</td>
+    <td class=style_05 >VARCHAR2(30)</td>
+    <td class=style_05 >30</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>17</td>
+    <td class=style_05 >邮政编码</td>
+    <td class=style_05 >POSTALCODE</td>
+    <td class=style_05 >VARCHAR2(10)</td>
+    <td class=style_05 >10</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>18</td>
+    <td class=style_05 >工作单位</td>
+    <td class=style_05 >WORKUNIT</td>
+    <td class=style_05 >VARCHAR2(100)</td>
+    <td class=style_05 >100</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>19</td>
+    <td class=style_05 >证件类型</td>
+    <td class=style_05 >CERTYPE</td>
+    <td class=style_05 >VARCHAR2(64)</td>
+    <td class=style_05 >64</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>20</td>
+    <td class=style_05 >证件号码</td>
+    <td class=style_05 >CERNO</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>21</td>
+    <td class=style_05 >采集数据时间戳</td>
+    <td class=style_05 >S_EXT_TIMESTAMP</td>
+    <td class=style_05 >TIMESTAMP(6)</td>
+    <td class=style_05 >6</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>22</td>
+    <td class=style_05 >采集数据批次号</td>
+    <td class=style_05 >S_EXT_BATCH</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>23</td>
+    <td class=style_05 >采集数据序列</td>
+    <td class=style_05 >S_EXT_SEQUENCE</td>
+    <td class=style_05 >VARCHAR2(50)</td>
+    <td class=style_05 >50</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>24</td>
+    <td class=style_05 >采集数据有效性标识</td>
+    <td class=style_05 >S_EXT_VALIDFLAG</td>
+    <td class=style_05 >VARCHAR2(1)</td>
+    <td class=style_05 >1</td>
+    <td class=style_06 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_08 >&nbsp;</td>
+    <td class=style_07 >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+    <td class=style_0d >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>25</td>
+    <td class=style_10 >数据最后更新时间</td>
+    <td class=style_11 >DATE_UDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >36</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_13 >X</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>26</td>
+    <td class=style_10 >数据插入时间</td>
+    <td class=style_11 >DATE_IDT</td>
+    <td class=style_11 >TIMESTAMP(6)</td>
+    <td class=style_11 >&nbsp;</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>27</td>
+    <td class=style_10 >数据批次号</td>
+    <td class=style_11 >JOBID</td>
+    <td class=style_11 >VARCHAR2(10)</td>
+    <td class=style_11 >10</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>28</td>
+    <td class=style_10 >数据唯一ID</td>
+    <td class=style_11 >DATE_SEQ</td>
+    <td class=style_11 >VARCHAR2(36)</td>
+    <td class=style_11 >6</td>
+    <td class=style_12 >&nbsp;</td>
+    <td class=style_14 >X</td>
+    <td class=style_14 >&nbsp;</td>
+    <td class=style_13 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+    <td class=style_15 >&nbsp;</td>
+  </tr>
+  <tr>
+    <td class=rowHeader>29</td>
+    <td class=style_18 >人员唯一标识</td>
+    <td class=style_18 >PERSON_ID</td>
+    <td class=style_18 >VARCHAR2(50)</td>
+    <td class=style_18 >50</td>
+    <td class=style_19 >&nbsp;</td>
+    <td class=style_1a >&nbsp;</td>
+    <td class=style_1b >&nbsp;</td>
+    <td class=style_1a >&nbsp;</td>
+    <td class=style_1c >&nbsp;</td>
+    <td class=style_1c >&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
